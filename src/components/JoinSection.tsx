@@ -30,12 +30,6 @@ const JoinSection = () => (
             >
               Try the Team
             </a>
-            <a
-              href="#"
-              className="inline-flex rounded-lg border-2 border-primary px-8 py-3.5 text-base font-semibold text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
-            >
-              Fill Out Waiver Form
-            </a>
           </div>
         </div>
       </div>
