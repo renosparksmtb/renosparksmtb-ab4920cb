@@ -14,7 +14,7 @@ const WhoWeAre = () => (
         <div className="space-y-4 text-foreground/90 leading-relaxed">
           <p>
             We are a co‑ed youth mountain biking team that competes through the{" "}
-            <strong>National Interscholastic Cycling Association (NICA)</strong>.
+            <a href="https://nationalmtb.org/" target="_blank" rel="noopener noreferrer" className="underline font-bold hover:text-secondary"><strong>National Interscholastic Cycling Association (NICA)</strong></a>.
           </p>
           <p>
             We accept student‑athletes from <strong>5th through 12th grade</strong>, both female and male,
