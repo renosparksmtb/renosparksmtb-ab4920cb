@@ -26,6 +26,9 @@ const GritSection = () => (
           <p className="rounded-lg bg-secondary/15 p-4 text-sm font-medium text-foreground">
             GRiT events are open to girls <strong>and</strong> moms — come ride with us!
           </p>
+          <a href="https://nevadanorthmtb.org/grit-program/" target="_blank" rel="noopener noreferrer" className="inline-block mt-4 rounded-lg bg-secondary px-6 py-3 text-sm font-semibold text-white hover:bg-secondary/90 transition-colors">
+            Nevada North GRiT Program
+          </a>
         </div>
         <div className="flex items-center justify-center">
           <div className="flex h-48 w-48 items-center justify-center rounded-full bg-primary/10">
