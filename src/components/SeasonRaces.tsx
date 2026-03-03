@@ -1,9 +1,9 @@
 const VENUES = [
-  { name: "Kirkwood", icon: "⛰️" },
-  { name: "Northstar", icon: "🌲" },
-  { name: "Capital City (Carson City)", icon: "🏛️" },
-  { name: "Mammoth Mountain", icon: "🗻" },
-  { name: "Tahoe Donner", icon: "🏔️" },
+  { name: "Kirkwood", icon: "⛰️", url: "https://www.kirkwood.com/" },
+  { name: "Northstar", icon: "🌲", url: "https://www.northstarcalifornia.com/" },
+  { name: "Capital City (Carson City)", icon: "🏛️", url: "https://visitcarsoncity.com/events/capital-city-crusher/" },
+  { name: "Mammoth Mountain", icon: "🗻", url: "https://www.mammothmountain.com/" },
+  { name: "Tahoe Donner", icon: "🏔️", url: "https://www.tahoedonner.com/" },
 ];
 
 const SeasonRaces = () => (
@@ -51,7 +51,7 @@ const SeasonRaces = () => (
                 className="flex items-center gap-4 rounded-xl border border-border bg-card px-5 py-4 shadow-sm"
               >
                 <span className="text-2xl">{v.icon}</span>
-                <span className="font-semibold text-foreground">{v.name}</span>
+                <a href={v.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground underline hover:text-secondary">{v.name}</a>
               </div>
             ))}
           </div>
