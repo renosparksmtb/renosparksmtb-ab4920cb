@@ -22,7 +22,7 @@ const WhoWeAre = () => (
           </p>
           <p>
             We train from <strong>July through October</strong> and compete with other local high school
-            teams in the <strong>Nevada North Cycling League</strong>.
+            teams in the <a href="https://nevadanorthmtb.org/" target="_blank" rel="noopener noreferrer" className="underline font-bold hover:text-secondary"><strong>Nevada North Cycling League</strong></a>.
           </p>
            <p>
             The Reno‑Sparks Composite MTB Team is a <strong>composite team</strong>, meaning we serve

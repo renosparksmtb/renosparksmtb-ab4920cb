@@ -6,7 +6,7 @@ const CHECKLIST = [
   "Sunscreen & sunglasses",
   "Closed-toe shoes (no sandals)",
   "Positive attitude!",
-  "Front and rear bike lights and helmet light (required for low-light conditions)",
+  "Front facing headlight (1100 lumens min)",
 ];
 
 const PracticeSection = () => (
