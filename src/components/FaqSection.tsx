@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Icon from "@/components/Icon";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const FAQS = [
   {
@@ -60,17 +62,10 @@ const FaqSection = () => {
                 aria-expanded={openIdx === i}
               >
                 <span>{faq.q}</span>
-                <svg
+                <Icon
+                  icon={faChevronDown}
                   className={`h-5 w-5 shrink-0 text-muted-foreground transition-transform ${openIdx === i ? "rotate-180" : ""}`}
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                    clipRule="evenodd"
-                  />
-                </svg>
+                />
               </button>
               {openIdx === i && (
                 <div className="px-6 pb-4 text-foreground/85 leading-relaxed">{faq.a}</div>
