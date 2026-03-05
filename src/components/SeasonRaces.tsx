@@ -1,9 +1,13 @@
-const VENUES = [
-  { name: "Kirkwood", icon: "⛰️", url: "https://www.kirkwood.com/" },
-  { name: "Northstar", icon: "🌲", url: "https://www.northstarcalifornia.com/" },
-  { name: "Capital City (Carson City)", icon: "🏛️", url: "https://visitcarsoncity.com/events/capital-city-crusher/" },
-  { name: "Mammoth Mountain", icon: "🗻", url: "https://www.mammothmountain.com/" },
-  { name: "Tahoe Donner", icon: "🏔️", url: "https://www.tahoedonner.com/" },
+import { faMountain, faTree, faLandmarkDome, faMountainSun, faHouseFlag } from "@fortawesome/free-solid-svg-icons";
+import Icon from "@/components/Icon";
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+
+const VENUES: { name: string; icon: IconDefinition; url: string }[] = [
+  { name: "Kirkwood", icon: faMountain, url: "https://www.kirkwood.com/" },
+  { name: "Northstar", icon: faTree, url: "https://www.northstarcalifornia.com/" },
+  { name: "Capital City (Carson City)", icon: faLandmarkDome, url: "https://visitcarsoncity.com/events/capital-city-crusher/" },
+  { name: "Mammoth Mountain", icon: faMountainSun, url: "https://www.mammothmountain.com/" },
+  { name: "Tahoe Donner", icon: faHouseFlag, url: "https://www.tahoedonner.com/" },
 ];
 
 const SeasonRaces = () => (
@@ -50,7 +54,7 @@ const SeasonRaces = () => (
                 key={v.name}
                 className="flex items-center gap-4 rounded-xl border border-border bg-card px-5 py-4 shadow-sm"
               >
-                <span className="text-2xl">{v.icon}</span>
+                <Icon icon={v.icon} className="text-2xl text-primary" />
                 <a href={v.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground underline hover:text-secondary">{v.name}</a>
               </div>
             ))}
