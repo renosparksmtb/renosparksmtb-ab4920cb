@@ -1,4 +1,4 @@
-import { faMountain, faTree, faLandmarkDome, faMountainSun, faHouseFlag } from "@fortawesome/free-solid-svg-icons";
+import { faMountain, faTree, faLandmarkDome, faMountainSun, faHouseFlag, faCampground, faFlag, faBicycle, faBullhorn } from "@fortawesome/free-solid-svg-icons";
 import Icon from "@/components/Icon";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
@@ -29,10 +29,10 @@ const SeasonRaces = () => (
           <div className="mt-6 rounded-xl border border-border bg-card p-6 shadow-sm">
             <h3 className="mb-3 text-lg font-semibold text-secondary">What a Race Weekend Is Like</h3>
             <ul className="space-y-2 text-foreground/85">
-              <li>🏕️ Team camping and bonding the night before</li>
-              <li>🎪 Pit Zone — our team home base with food, shade, and cheering</li>
-              <li>🚴 Course preview rides with coaches</li>
-              <li>📣 Incredible energy from families and fellow teams</li>
+              <li className="flex items-center gap-2"><Icon icon={faCampground} className="w-4 text-primary" /> Team camping and bonding the night before</li>
+              <li className="flex items-center gap-2"><Icon icon={faFlag} className="w-4 text-primary" /> Pit Zone — our team home base with food, shade, and cheering</li>
+              <li className="flex items-center gap-2"><Icon icon={faBicycle} className="w-4 text-primary" /> Course preview rides with coaches</li>
+              <li className="flex items-center gap-2"><Icon icon={faBullhorn} className="w-4 text-primary" /> Incredible energy from families and fellow teams</li>
             </ul>
           </div>
 
