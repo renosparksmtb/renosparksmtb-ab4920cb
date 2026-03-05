@@ -1,9 +1,13 @@
-const CORE_VALUES = [
-  { icon: "🎉", label: "Fun" },
-  { icon: "🤝", label: "Inclusivity" },
-  { icon: "⚖️", label: "Equity" },
-  { icon: "🙏", label: "Respect" },
-  { icon: "🏘️", label: "Community" },
+import { faFaceSmile, faUsers, faScaleBalanced, faHandshake, faHouseChimney } from "@fortawesome/free-solid-svg-icons";
+import Icon from "@/components/Icon";
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+
+const CORE_VALUES: { icon: IconDefinition; label: string }[] = [
+  { icon: faFaceSmile, label: "Fun" },
+  { icon: faUsers, label: "Inclusivity" },
+  { icon: faScaleBalanced, label: "Equity" },
+  { icon: faHandshake, label: "Respect" },
+  { icon: faHouseChimney, label: "Community" },
 ];
 
 const WhoWeAre = () => (
@@ -48,7 +52,7 @@ const WhoWeAre = () => (
                 key={v.label}
                 className="flex flex-col items-center gap-2 rounded-xl bg-blue-light p-5 text-center shadow-sm"
               >
-                <span className="text-3xl">{v.icon}</span>
+                <Icon icon={v.icon} className="text-3xl text-primary" />
                 <span className="text-sm font-semibold text-primary">{v.label}</span>
               </div>
             ))}
