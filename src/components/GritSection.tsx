@@ -1,5 +1,3 @@
-import gritLogo from "@/assets/grit-logo.png";
-
 const GritSection = () => (
   <section id="grit" className="section-padding bg-blue-light">
     <div className="container-narrow">
@@ -33,7 +31,9 @@ const GritSection = () => (
           </a>
         </div>
         <div className="flex items-center justify-center">
-          <img src={gritLogo} alt="GRiT – Girls Riding Together logo" className="h-64 w-64 object-contain" />
+          <div className="flex h-48 w-48 items-center justify-center rounded-full bg-primary/10">
+            <span className="text-7xl">💪</span>
+          </div>
         </div>
       </div>
     </div>
