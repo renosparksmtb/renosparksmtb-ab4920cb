@@ -1,3 +1,5 @@
+import gritLogo from "@/assets/grit-logo.png";
+
 const GritSection = () => (
   <section id="grit" className="section-padding bg-blue-light">
     <div className="container-narrow">
