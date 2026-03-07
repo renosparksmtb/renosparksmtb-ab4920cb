@@ -70,6 +70,9 @@ const FAQS: { q: string; a: ReactNode; aText?: string }[] = [
           </ul>
         </div>
 
+        <p className="font-bold text-foreground">Loaner Bike Program</p>
+        <p>A limited loaner bike program may be available for registered NICA student‑athletes who are just getting started. This can be a great option for families who want their rider to try the team before purchasing a bike. Please ask the team for more details and current availability.</p>
+
         <p className="font-bold text-foreground">Registered NICA Discount</p>
         <p>Both of our bike partners participate in registered NICA discount programs, which can offer up to 25% off new bikes for licensed NICA student‑athletes. Discounts vary by brand, model, and availability, and require a valid NICA registration at the time of purchase.</p>
 
