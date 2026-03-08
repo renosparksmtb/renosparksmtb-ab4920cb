@@ -31,9 +31,9 @@ const JoinSection = () => (
             </a>
             <h3 className="pt-2 text-lg font-semibold text-primary">How to Get Started</h3>
             <ol className="list-decimal space-y-2 pl-5 text-foreground/85">
-              <li>Fill out the online waiver form (link below)</li>
-              <li>Email the team to let us know you'd like to attend a few practices</li>
-              <li>Show up, ride, and have fun!</li>
+              <li><strong>Complete the waiver</strong> — Fill out NICA's Agreement to Participate and Release of Liability form using the link above. This is required before attending any team events.</li>
+              <li><strong>Email the team</strong> — Send us a quick note at <a href="mailto:renosparksmtb@gmail.com" className="font-semibold text-primary underline hover:text-primary/80">renosparksmtb@gmail.com</a> to let us know you'd like to come out for a ride.</li>
+              <li><strong>Show up &amp; ride!</strong> — Join us at practice, meet the coaches and athletes, and see if the team is the right fit. No gear? No problem — we can help.</li>
             </ol>
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSfcGQ5MNu8trNOgcREDMRtdNDmN-yNkEZa1_ievRYlSNOeP8w/viewform?usp=sharing&ouid=118424864578261391050"
