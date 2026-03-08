@@ -1,4 +1,5 @@
-import gritIcon from "@/assets/grit-icon.png";
+import Icon from "@/components/Icon";
+import { faBiking, faCampground, faHandsHelping } from "@fortawesome/free-solid-svg-icons";
 
 const GritSection = () => (
   <section id="grit" className="section-padding bg-blue-light">
@@ -33,8 +34,24 @@ const GritSection = () => (
           </a>
         </div>
         <div className="flex items-center justify-center">
-          <div className="flex h-48 w-48 items-center justify-center rounded-full bg-primary/10 overflow-hidden">
-            <img src={gritIcon} alt="Girls riding together" className="h-44 w-44 object-contain" />
+          <div className="w-full max-w-xs space-y-4 rounded-2xl border-2 border-primary/20 bg-card p-6 shadow-lg">
+            <h3 className="text-center text-lg font-bold text-primary">What GRiT Offers</h3>
+            {[
+              { label: "Girls-only rides", icon: faBiking },
+              { label: "GRiT Camp", icon: faCampground },
+              { label: "Mentorship & confidence", icon: faHandsHelping },
+            ].map((item) => (
+              <div
+                key={item.label}
+                className="flex items-center gap-3 rounded-xl border border-secondary/30 bg-secondary/10 p-3 transition-transform hover:scale-[1.02]"
+              >
+                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-secondary text-secondary-foreground">
+                  <Icon icon={item.icon} className="text-sm" />
+                </div>
+                <span className="text-sm font-medium text-foreground/90">{item.label}</span>
+              </div>
+            ))}
+            <p className="text-center text-xs text-muted-foreground">Girls & moms welcome!</p>
           </div>
         </div>
       </div>
