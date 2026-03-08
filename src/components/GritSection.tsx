@@ -10,22 +10,17 @@ const GritSection = () => (
       <div className="grid gap-8 md:grid-cols-2">
         <div className="space-y-4 text-foreground/90 leading-relaxed">
           <p>
-            Our GRiT program provides a supportive and empowering environment for female student‑athletes.
+            Our GRiT program provides a supportive and empowering environment for female student‑athletes. Whether your daughter is brand new to mountain biking or already shredding trails, GRiT is all about building confidence, friendships, and skills — together.
           </p>
-          <ul className="space-y-2">
-            <li className="flex items-start gap-3">
-              <span className="text-secondary font-bold">★</span>
-              <span>Girls‑only rides in a supportive setting</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-secondary font-bold">★</span>
-              <span>GRiT Camp for immersive skill-building</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-secondary font-bold">★</span>
-              <span>Confidence‑focused events and mentorship</span>
-            </li>
-          </ul>
+          <p>
+            <strong>Girls‑only rides</strong> create a comfortable space where riders of all levels can progress at their own pace, ask questions, and push their limits without pressure. Rides are led by experienced female coaches and mentors who know how to make every girl feel welcome.
+          </p>
+          <p>
+            <strong>GRiT Camp</strong> is an immersive multi‑day experience focused on skill‑building, trail riding, and team bonding. It's one of the highlights of the season and a great way for new riders to jump in.
+          </p>
+          <p>
+            <strong>Mentorship &amp; confidence</strong> are at the heart of everything we do. Through coached rides, goal‑setting, and community events, GRiT helps young women develop resilience on and off the bike.
+          </p>
           <p className="rounded-lg bg-secondary/15 p-4 text-sm font-medium text-foreground">
             GRiT events are open to girls <strong>and</strong> moms — come ride with us!
           </p>
