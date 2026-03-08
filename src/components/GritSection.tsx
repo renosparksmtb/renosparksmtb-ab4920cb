@@ -1,3 +1,5 @@
+import gritIcon from "@/assets/grit-icon.png";
+
 const GritSection = () => (
   <section id="grit" className="section-padding bg-blue-light">
     <div className="container-narrow">
@@ -31,8 +33,8 @@ const GritSection = () => (
           </a>
         </div>
         <div className="flex items-center justify-center">
-          <div className="flex h-48 w-48 items-center justify-center rounded-full bg-primary/10">
-            <span className="text-7xl">💪</span>
+          <div className="flex h-48 w-48 items-center justify-center rounded-full bg-primary/10 overflow-hidden">
+            <img src={gritIcon} alt="Girls riding together" className="h-44 w-44 object-contain" />
           </div>
         </div>
       </div>

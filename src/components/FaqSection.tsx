@@ -108,7 +108,7 @@ const FaqSection = () => {
         <h2 className="mb-8 text-3xl font-bold text-primary sm:text-4xl">Frequently Asked Questions</h2>
         <div className="space-y-3 max-w-3xl">
           {FAQS.map((faq, i) => (
-            <div key={i} className="rounded-xl border border-border bg-card shadow-sm overflow-hidden">
+            <div key={i} className="rounded-xl border border-border bg-card shadow-sm overflow-hidden transition-shadow duration-200 hover:shadow-md hover:border-primary/30">
               <button
                 onClick={() => setOpenIdx(openIdx === i ? null : i)}
                 className="flex w-full items-center justify-between px-6 py-4 text-left font-semibold text-foreground hover:bg-muted/50 transition-colors"
