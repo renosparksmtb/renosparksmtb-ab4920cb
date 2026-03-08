@@ -32,7 +32,7 @@ const JoinSection = () =>
               <li>Show up, ride, and have fun!</li>
             </ol>
           </div>
-          <div className="gap-4 items-center justify-center flex flex-col border-solid bg-secondary-foreground">
+          <div className="gap-4 items-center justify-center flex flex-col border-solid rounded-2xl bg-muted-foreground">
             <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSfcGQ5MNu8trNOgcREDMRtdNDmN-yNkEZa1_ievRYlSNOeP8w/viewform?usp=sharing&ouid=118424864578261391050"
             target="_blank"
