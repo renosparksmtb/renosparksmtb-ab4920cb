@@ -1,4 +1,6 @@
-
+import Icon from "@/components/Icon";
+import { faFileSignature, faEnvelope, faBiking } from "@fortawesome/free-solid-svg-icons";
+import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 const JoinSection = () => (
   <section id="join" className="section-padding bg-gold-light">
