@@ -10,23 +10,26 @@ import GearSection from "@/components/GearSection";
 import FaqSection from "@/components/FaqSection";
 import ContactSection from "@/components/ContactSection";
 import SiteFooter from "@/components/SiteFooter";
+import BackToTop from "@/components/BackToTop";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const Index = () => (
   <>
     <SiteNav />
     <main>
       <HeroSection />
-      <WhoWeAre />
-      <PracticeSection />
-      <SeasonRaces />
-      <JoinSection />
-      <Volunteering />
-      <GritSection />
-      <GearSection />
-      <FaqSection />
-      <ContactSection />
+      <ScrollReveal><WhoWeAre /></ScrollReveal>
+      <ScrollReveal><PracticeSection /></ScrollReveal>
+      <ScrollReveal><SeasonRaces /></ScrollReveal>
+      <ScrollReveal><JoinSection /></ScrollReveal>
+      <ScrollReveal><Volunteering /></ScrollReveal>
+      <ScrollReveal><GritSection /></ScrollReveal>
+      <ScrollReveal><GearSection /></ScrollReveal>
+      <ScrollReveal><FaqSection /></ScrollReveal>
+      <ScrollReveal><ContactSection /></ScrollReveal>
     </main>
     <SiteFooter />
+    <BackToTop />
   </>
 );
 
