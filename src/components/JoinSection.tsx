@@ -1,8 +1,10 @@
+import tryTeamIcon from "@/assets/try-team-icon.png";
+
 const JoinSection = () => (
   <section id="join" className="section-padding bg-gold-light">
     <div className="container-narrow">
       <div className="mb-16">
-        <h2 className="mb-8 text-3xl font-bold text-primary sm:text-4xl">Try the Team – No Pressure</h2>
+        <h2 className="mb-4 text-3xl font-bold text-primary sm:text-4xl">Try the Team – No Pressure</h2>
         <div className="grid gap-8 md:grid-cols-2">
           <div className="space-y-4 text-foreground/90 leading-relaxed">
             <p>
@@ -31,8 +33,6 @@ const JoinSection = () => (
               <li>Email the team to let us know you'd like to attend a few practices</li>
               <li>Show up, ride, and have fun!</li>
             </ol>
-          </div>
-          <div className="flex flex-col items-start justify-center gap-4">
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSfcGQ5MNu8trNOgcREDMRtdNDmN-yNkEZa1_ievRYlSNOeP8w/viewform?usp=sharing&ouid=118424864578261391050"
               target="_blank"
@@ -41,6 +41,11 @@ const JoinSection = () => (
             >
               Try the Team
             </a>
+          </div>
+          <div className="flex items-center justify-center">
+            <div className="flex h-48 w-48 items-center justify-center rounded-full bg-primary/10">
+              <img src={tryTeamIcon} alt="Welcome – try the team" className="h-36 w-36 rounded-full object-contain" />
+            </div>
           </div>
         </div>
       </div>
