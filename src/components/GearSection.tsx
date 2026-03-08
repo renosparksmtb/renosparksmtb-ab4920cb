@@ -1,5 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStore } from "@fortawesome/free-solid-svg-icons";
+import Icon from "@/components/Icon";
+import { faStore, faPercent, faWrench, faBicycle } from "@fortawesome/free-solid-svg-icons";
 
 const GEAR = [
   "Mountain bike in good working condition",
