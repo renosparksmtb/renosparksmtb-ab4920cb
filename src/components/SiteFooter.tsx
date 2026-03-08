@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
+
 const SiteFooter = () => (
   <footer className="border-t border-border bg-card px-4 py-8 text-center">
     <p className="mx-auto max-w-2xl text-sm text-muted-foreground">
@@ -13,6 +16,14 @@ const SiteFooter = () => (
       </a>
       <a href="https://pitzone.nationalmtb.org/" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80">
         NICA Pit Zone Registration
+      </a>
+    </div>
+    <div className="mt-4 flex justify-center gap-4">
+      <a href="https://www.facebook.com/renosparksmtb" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="flex h-9 w-9 items-center justify-center rounded-full bg-primary text-primary-foreground transition-opacity hover:opacity-80">
+        <FontAwesomeIcon icon={faFacebookF} className="h-4 w-4" />
+      </a>
+      <a href="https://www.instagram.com/renosparksmtb" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="flex h-9 w-9 items-center justify-center rounded-full bg-primary text-primary-foreground transition-opacity hover:opacity-80">
+        <FontAwesomeIcon icon={faInstagram} className="h-4 w-4" />
       </a>
     </div>
     <p className="mt-3 text-xs text-muted-foreground/60">
