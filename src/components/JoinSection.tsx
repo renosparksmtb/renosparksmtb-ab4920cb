@@ -43,8 +43,8 @@ const JoinSection = () => (
             </a>
           </div>
           <div className="flex items-center justify-center">
-            <div className="flex h-48 w-48 items-center justify-center rounded-full bg-primary/10">
-              <img src={tryTeamIcon} alt="Welcome – try the team" className="h-36 w-36 rounded-full object-contain" />
+            <div className="flex h-48 w-48 items-center justify-center rounded-full bg-primary/10 overflow-hidden">
+              <img src={tryTeamIcon} alt="Welcome – try the team" className="h-44 w-44 object-contain" />
             </div>
           </div>
         </div>
