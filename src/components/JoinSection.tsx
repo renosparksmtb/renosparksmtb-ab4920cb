@@ -1,4 +1,4 @@
-import tryTeamIcon from "@/assets/try-team-icon.png";
+
 
 const JoinSection = () => (
   <section id="join" className="section-padding bg-gold-light">
