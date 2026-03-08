@@ -47,11 +47,11 @@ const JoinSection = () => (
           <div className="flex items-center justify-center">
             <div className="w-full max-w-xs space-y-4 rounded-2xl border-2 border-primary/20 bg-card p-6 shadow-lg">
               <h3 className="text-center text-lg font-bold text-primary">Your 3 Free Rides</h3>
-              {[
-                { step: 1, label: "Complete the waiver", icon: "📋" },
-                { step: 2, label: "Email the team", icon: "✉️" },
-                { step: 3, label: "Show up & ride!", icon: "🚵" },
-              ].map((item) => (
+              {([
+                { step: 1, label: "Complete the waiver", icon: faFileSignature },
+                { step: 2, label: "Email the team", icon: faEnvelope },
+                { step: 3, label: "Show up & ride!", icon: faBiking },
+              ] as { step: number; label: string; icon: IconDefinition }[]).map((item) => (
                 <div
                   key={item.step}
                   className="flex items-center gap-3 rounded-xl border border-secondary/30 bg-secondary/10 p-3 transition-transform hover:scale-[1.02]"
@@ -60,7 +60,9 @@ const JoinSection = () => (
                     {item.step}
                   </div>
                   <span className="text-sm font-medium text-foreground/90">{item.label}</span>
-                  <span className="ml-auto text-xl">{item.icon}</span>
+                  <span className="ml-auto text-secondary">
+                    <Icon icon={item.icon} className="text-lg" />
+                  </span>
                 </div>
               ))}
               <p className="text-center text-xs text-muted-foreground">No commitment until you're ready!</p>
